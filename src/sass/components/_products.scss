@@ -18,8 +18,10 @@
   @extend%title;
   margin-bottom: 31px;
 }
-.products__title--white {
+.products__title-label--white {
   color: $primary-text-color;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 .products__list {
   @extend %list;
@@ -35,7 +37,11 @@
     flex-basis: 100%;
   }
   @media screen and (min-width: 768px) {
+    max-width: 220px;
     flex-basis: calc((100% - (3 * 30px)) / 3);
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 330px;
   }
 }
 .products__item:first-child {
@@ -46,4 +52,8 @@
 }
 .products__item:last-child {
   background-color: $milkshakes-bg-color;
+}
+.wrapper-products {
+  padding-left: 44px;
+  padding-right: 44px;
 }
