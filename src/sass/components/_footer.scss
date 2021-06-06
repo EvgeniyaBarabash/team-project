@@ -13,21 +13,102 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 }
+.footer__cafe {
+  width: 80px;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 25px;
+
+  color: $primary-text-color;
+  background-color: $coffee-bg-color;
+  border-radius: 6px;
+}
+.footer__foodtrack {
+  width: 130px;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 25px;
+
+  color: $primary-text-color;
+  background-color: $milkshakes-bg-color;
+  border-radius: 6px;
+}
+.footer__text-town {
+  color: $black-text-color;
+  margin-bottom: 10px;
+}
+.footer__text-description {
+  margin-bottom: 25px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.footer__text-primary {
+  color: $black-text-color;
+}
+.footer__text-secondary {
+  color: $hero-accent-bg-color;
+}
+.cafe__worktime-list {
+  @extend %list;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid $copyright-border;
+  border-bottom: 1px solid $copyright-border;
+}
+.cafe__worktime-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer__address-list {
+  @extend %list;
+  margin-top: 25px;
+}
+.footer__address-item {
+  @extend %link;
+  cursor: pointer;
+}
 .footer__buttons {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 113px;
 }
 .footer__button-first {
-  border: none;
-  border-radius: 22px;
+  padding: 0;
+  margin-bottom: 10px;
+  width: 161px;
   height: 44px;
+
+  color: $primary-text-color;
   background-color: $red-button;
+
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $red-button-hover;
+  }
 }
 .footer__button-second {
+  padding: 0;
+  color: $title-text-color;
   border: none;
   border-radius: 22px;
-  max-height: 44px;
+  width: 161px;
+  height: 44px;
   background-color: $primary-text-color;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $white-button-hover;
+  }
 }
 .footer__title-label {
   @extend %title-lable;
@@ -43,7 +124,6 @@
   flex-direction: column;
   align-items: flex-end;
   margin-top: 43px;
-  margin-bottom: 43px;
 }
 .footer-social__list {
   @extend %list;
@@ -53,6 +133,11 @@
 .footer-social__item {
   border-radius: 50%;
   background-color: $footer-icon-bg;
+
+  &:hover,
+  &:focus {
+    background-color: $title-text-color;
+  }
 }
 .footer-social__item:not(:last-child) {
   margin-right: 28px;
@@ -65,6 +150,9 @@
   width: 32px;
   height: 32px;
 }
+.footer-social__image {
+  fill: $primary-text-color;
+}
 .footer__contact-tel {
   font-weight: bold;
   font-size: 12px;
@@ -76,6 +164,12 @@
   font-size: 13px;
   line-height: 1.86;
   color: $title-text-color;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $grey-text-color;
+  }
 }
 .copyright {
   padding-top: 22px;
