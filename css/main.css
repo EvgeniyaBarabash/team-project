@@ -584,6 +584,10 @@ img {
   padding-right: 44px;
 }
 
+.gallery {
+  background-image: linear-gradient(to bottom, #fff5f6 40%, #FFFFFF 40%);
+}
+
 .gallery__box {
   width: 320px;
   height: 122px;
@@ -610,7 +614,7 @@ img {
 
 .gallery__pic-one {
   position: absolute;
-  left: 2%;
+  left: 0;
   top: 41px;
 }
 
@@ -630,7 +634,7 @@ img {
 
 .gallery__pic-two {
   position: absolute;
-  left: 14%;
+  left: 13%;
   top: 25px;
 }
 
@@ -650,7 +654,7 @@ img {
 
 .gallery__pic-three {
   position: absolute;
-  left: 14%;
+  left: 13%;
   top: 66px;
 }
 
@@ -710,7 +714,7 @@ img {
 
 .gallery__pic-six {
   position: absolute;
-  left: 50%;
+  left: 51.5%;
   top: 28px;
 }
 
@@ -730,7 +734,7 @@ img {
 
 .gallery__pic-seven {
   position: absolute;
-  left: 50%;
+  left: 51.5%;
   top: 70px;
 }
 
@@ -750,60 +754,60 @@ img {
 
 .gallery__pic-eight {
   position: absolute;
-  left: 63%;
+  left: 64.5%;
   top: 15px;
 }
 
 @media screen and (min-width: 768px) {
   .gallery__pic-eight {
-    left: 63%;
+    left: 62%;
     top: 33px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .gallery__pic-eight {
-    left: 63%;
+    left: 62%;
     top: 53px;
   }
 }
 
 .gallery__pic-nine {
   position: absolute;
-  left: 63%;
+  left: 64.5%;
   top: 57px;
 }
 
 @media screen and (min-width: 768px) {
   .gallery__pic-nine {
-    left: 63%;
+    left: 62%;
     top: 122px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .gallery__pic-nine {
-    left: 63%;
+    left: 62%;
     top: 199px;
   }
 }
 
 .gallery__pic-ten {
   position: absolute;
-  left: 75%;
+  left: 77.5%;
   top: 44px;
 }
 
 @media screen and (min-width: 768px) {
   .gallery__pic-ten {
-    left: 75%;
+    left: 74%;
     top: 95px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .gallery__pic-ten {
-    left: 75%;
+    left: 74%;
     top: 154px;
   }
 }
