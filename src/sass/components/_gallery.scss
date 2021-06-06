@@ -1,15 +1,15 @@
 .gallery__box{
-    width: 364px;
+    width: 320px;
     height: 122px;
     margin: auto;
    
 
     @media screen and (min-width: 768px) {
-        width: 786px;
+        width: 768px;
         height: 264px; 
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         width: 1280px;
         height: 430px;
     }
@@ -17,166 +17,165 @@
 
 .gallery__list{
    @extend %list;
-   margin: auto;  
    position: relative;
 }
 
 .gallery__pic-one{
     position: absolute;
-    left: 10.5%; 
+    left: 20px; 
     top: 41px;
     
     @media screen and (min-width: 768px) {
-        left: 10.5%; 
+        left: 73px; 
         top: 87px; 
     }
 
-    @media screen and (min-width: 1200px) {
-        left: 10.5%; 
+    @media screen and (min-width: 1280px) {
+        left: 20px; 
         top: 142px;
     }
 }
 
 .gallery__pic-two{
     position: absolute;
-    left: 22%; 
+    left: 61px; 
     top: 25px; 
 
     @media screen and (min-width: 768px) {
-        left: 22%; 
+        left: 163px; 
         top: 54px;
     }
     
-    @media screen and (min-width: 1200px) {
-        left: 22%; 
+    @media screen and (min-width: 1280px) {
+        left: 165px; 
         top: 87px; 
     }
 }
 
 .gallery__pic-three{
     position: absolute;
-    left: 22%; 
+    left: 61px; 
     top: 66px; 
 
     @media screen and (min-width: 768px) {
-        left: 22%; 
+        left: 163px; 
         top: 143px;
     }
 
-    @media screen and (min-width: 1200px) {
-        left: 22%; 
+    @media screen and (min-width: 1280px) {
+        left: 165px; 
         top: 233px; 
     }
 }
 
 .gallery__pic-four{
     position: absolute;
-    left: 33.33%; 
+    left: 103px; 
     top: 0px; 
 
     @media screen and (min-width: 768px) {
-        left: 33.33%; 
+        left: 252px; 
         top: 0px; 
     }
 
-    @media screen and (min-width: 1200px) {
-        left: 33.33%; 
+    @media screen and (min-width: 1280px) {
+        left: 310px; 
         top: 0px;
     }
 }
 
 .gallery__pic-five{
     position: absolute;
-    left: 33.33%; 
+    left: 103px; 
     top: 83px; 
 
     @media screen and (min-width: 768px) {
-        left: 33.33%; 
+        left: 252px; 
         top: 179px;
     }
 
-    @media screen and (min-width: 1200px) {
-        left: 33.33%; 
+    @media screen and (min-width: 1280px) {
+        left: 310px; 
         top: 291px;
     }
 }
 
 .gallery__pic-six{
     position: absolute;
-    left: 56%; 
+    left: 185px; 
     top: 28px; 
 
     @media screen and (min-width: 768px) {
-        left: 56%; 
+        left: 430px; 
         top: 60px;
     }
 
-    @media screen and (min-width: 1200px) {
-        left:  56%; 
+    @media screen and (min-width: 1280px) {
+        left: 600px; 
         top: 99px; 
     }
 }
 
 .gallery__pic-seven{
     position: absolute;
-    left:  56%; 
+    left: 185px; 
     top: 70px; 
 
     @media screen and (min-width: 768px) {
-        left:  56%; 
+        left: 430px; 
         top: 150px;
     }
 
-    @media screen and (min-width: 1200px) {
-        left:  56%; 
+    @media screen and (min-width: 1280px) {
+        left: 600px; 
         top: 245px;
     }
 }
 
 .gallery__pic-eight{
     position: absolute;
-    left: 67%; 
+    left: 226px; 
     top: 15px;
     
     @media screen and (min-width: 768px) {
-        left: 67%; 
+        left: 520px; 
         top: 33px; 
     }
 
-    @media screen and (min-width: 1200px) {
-        left: 67%; 
+    @media screen and (min-width: 1280px) {
+        left: 745px; 
         top: 53px;
     }
 }
 
 .gallery__pic-nine{
     position: absolute;
-    left: 67%; 
+    left:226px; 
     top: 57px; 
 
     @media screen and (min-width: 768px) {
-        left: 67%; 
+        left: 520px; 
         top: 122px;
     }
 
-    @media screen and (min-width: 1200px) {
-        left: 67%; 
+    @media screen and (min-width: 1280px) {
+        left: 745px; 
         top: 199px;
     }
 }
 
 .gallery__pic-ten{
     position: absolute;
-    left: 79%; 
+    left: 268px; 
     top: 44px;
 
     @media screen and (min-width: 768px) {
-        left: 79%; 
+        left: 609px; 
         top: 95px; 
     }
 
-    @media screen and (min-width: 1200px) {
-        left: 79%; 
+    @media screen and (min-width: 1280px) {
+        left: 890px; 
         top: 154px; 
     }
 }
