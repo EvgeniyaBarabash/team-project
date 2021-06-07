@@ -1,0 +1,187 @@
+.gallery{
+    background-image: linear-gradient((to bottom, $first-bg-color 40%,  #FFFFFF 40%));
+}
+
+.gallery__box{
+    width: 320px;
+    height: 122px;
+    margin: auto;
+   
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        height: 264px; 
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        height: 430px;
+    }
+}
+
+.gallery__list{
+   @extend %list;
+   position: relative;
+}
+
+.gallery__pic-one{
+    position: absolute;
+    left: 0; 
+    top: 41px;
+
+    @media screen and (min-width: 768px) {
+        left: 2%; 
+        top: 87px; 
+    }
+
+    @media screen and (min-width: 1200px) {
+        left: 2%; 
+        top: 142px;
+    }
+}
+
+.gallery__pic-two{
+    position: absolute;
+    left: 13%; 
+    top: 25px; 
+
+    @media screen and (min-width: 768px) {
+        left: 14%; 
+        top: 54px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        left: 14%; 
+        top: 87px; 
+    }
+}
+
+.gallery__pic-three{
+    position: absolute;
+    left: 13%; 
+    top: 66px; 
+
+    @media screen and (min-width: 768px) {
+        left: 14%; 
+        top: 143px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        left: 14%; 
+        top: 233px; 
+    }
+}
+
+.gallery__pic-four{
+    position: absolute;
+    left: 26%; 
+    top: 0px; 
+
+    @media screen and (min-width: 768px) {
+        left: 26%; 
+        top: 0px; 
+    }
+
+    @media screen and (min-width: 1200px) {
+        left: 26%; 
+        top: 0px;
+    }
+}
+
+.gallery__pic-five{
+    position: absolute;
+    left: 26%; 
+    top: 83px; 
+
+    @media screen and (min-width: 768px) {
+        left: 26%; 
+        top: 179px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        left: 26%; 
+        top: 291px;
+    }
+}
+
+.gallery__pic-six{
+    position: absolute;
+    left: 51.5%; 
+    top: 28px; 
+
+    @media screen and (min-width: 768px) {
+        left: 50%; 
+        top: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        left: 50%; 
+        top: 99px; 
+    }
+}
+
+.gallery__pic-seven{
+    position: absolute;
+    left: 51.5%; 
+    top: 70px; 
+
+    @media screen and (min-width: 768px) {
+        left: 50%; 
+        top: 150px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        left: 50%; 
+        top: 245px;
+    }
+}
+
+.gallery__pic-eight{
+    position: absolute;
+    left: 64.5%; 
+    top: 15px;
+    
+    @media screen and (min-width: 768px) {
+        left: 62%; 
+        top: 33px; 
+    }
+
+    @media screen and (min-width: 1200px) {
+        left: 62%; 
+        top: 53px;
+    }
+}
+
+.gallery__pic-nine{
+    position: absolute;
+    left:64.5%; 
+    top: 57px; 
+
+    @media screen and (min-width: 768px) {
+        left: 62%; 
+        top: 122px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        left: 62%; 
+        top: 199px;
+    }
+}
+
+.gallery__pic-ten{
+    position: absolute;
+    left: 77.5%; 
+    top: 44px;
+
+    @media screen and (min-width: 768px) {
+        left: 74%; 
+        top: 95px; 
+    }
+
+    @media screen and (min-width: 1200px) {
+        left: 74%; 
+        top: 154px; 
+    }
+}
+
+
