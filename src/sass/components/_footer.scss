@@ -1,118 +1,37 @@
 .footer {
   background-color: $first-bg-color;
 }
-.footer__list {
-  @extend %list;
-  display: flex;
-  flex-wrap: wrap;
-}
+.footer__container {
+  padding-bottom: 43px;
 
-.footer__item {
-  padding: 43px 20px;
-  background-color: $primary-text-color;
-  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  border-radius: 24px;
-}
-.footer__cafe {
-  width: 80px;
-  font-size: 12px;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 25px;
-
-  color: $primary-text-color;
-  background-color: $coffee-bg-color;
-  border-radius: 6px;
-}
-.footer__foodtrack {
-  width: 130px;
-  font-size: 12px;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 25px;
-
-  color: $primary-text-color;
-  background-color: $milkshakes-bg-color;
-  border-radius: 6px;
-}
-.footer__text-town {
-  color: $black-text-color;
-  margin-bottom: 10px;
-}
-.footer__text-description {
-  margin-bottom: 25px;
-
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.5;
-}
-
-.footer__text-primary {
-  color: $black-text-color;
-}
-.footer__text-secondary {
-  color: $hero-accent-bg-color;
-}
-.cafe__worktime-list {
-  @extend %list;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  border-top: 1px solid $copyright-border;
-  border-bottom: 1px solid $copyright-border;
-}
-.cafe__worktime-item:not(:last-child) {
-  margin-bottom: 10px;
-}
-.footer__address-list {
-  @extend %list;
-  margin-top: 25px;
-}
-.footer__address-item {
-  @extend %link;
-  cursor: pointer;
-}
-.footer__buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 113px;
-}
-.footer__button-first {
-  padding: 0;
-  margin-bottom: 10px;
-  width: 161px;
-  height: 44px;
-
-  color: $primary-text-color;
-  background-color: $red-button;
-
-  border-radius: 22px;
-  border: none;
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    background-color: $red-button-hover;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding-bottom: 91px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 97px;
   }
 }
-.footer__button-second {
-  padding: 0;
-  color: $title-text-color;
-  border: none;
-  border-radius: 22px;
-  width: 161px;
-  height: 44px;
-  background-color: $primary-text-color;
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    background-color: $white-button-hover;
+.footer__titles {
+  width: 234px;
+  @media screen and (min-width: 768px) {
+    width: 340px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: auto;
   }
 }
 .footer__title-label {
   @extend %title-lable;
   text-align: left;
+  padding-bottom: 17px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 15px;
+  }
 }
 .footer__title {
   @extend%title;
@@ -123,12 +42,17 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-top: 43px;
+  padding-top: 43px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    margin-left: auto;
+  }
 }
 .footer-social__list {
   @extend %list;
   display: flex;
-  margin-bottom: 46px;
+  padding-bottom: 46px;
 }
 .footer-social__item {
   border-radius: 50%;
@@ -149,6 +73,11 @@
   border-radius: 50%;
   width: 32px;
   height: 32px;
+
+  @media screen and (min-width: 768px) {
+    width: 34px;
+    height: 34px;
+  }
 }
 .footer-social__image {
   fill: $primary-text-color;
@@ -156,13 +85,20 @@
 .footer__contact-tel {
   font-weight: bold;
   font-size: 12px;
-  line-height: 1.86;
+  line-height: 1.9;
   color: $black-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 .footer__contact-number {
   font-weight: bold;
   font-size: 13px;
-  line-height: 1.86;
+  line-height: 1.9;
   color: $title-text-color;
   cursor: pointer;
 
@@ -170,8 +106,38 @@
   &:focus {
     color: $grey-text-color;
   }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+.copyright__section {
+  padding-top: 22px;
+  padding-bottom: 25px;
+  border-top: 1px solid $copyright-border;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 .copyright {
-  padding-top: 22px;
-  border-top: 1px solid $copyright-border;
+  width: 100%;
+  padding-left: 80px;
+  padding-right: 80px;
+
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.5;
+
+  @media screen and (min-width: 768px) {
+    line-height: 1.9;
+  }
 }
