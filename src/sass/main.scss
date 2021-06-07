@@ -4,11 +4,19 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-@import './components/example';
+
 @import './base/normalize';
 @import './base/variables';
 @import './base/base-style';
 @import './base/container';
 @import './utils/placeholder';
 @import './components/products';
+
 @import './components/cow';
+
+@import './components/gallery';
+@import './components/contacts';
+@import './components/footer';
+@import './components/header';
+@import './components/example';
+
