@@ -1,0 +1,154 @@
+.header {
+  background-color: $hero-bg-color;
+  max-height: 502px;
+}
+
+.header_title {
+  font-family: $title-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $primary-text-color;
+  position: absolute;
+  top: 101px;
+}
+
+.header_background-image {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 410px;
+}
+
+.ice-cream {
+  position: absolute;
+  margin-left: 100px;
+}
+
+.header_title-span {
+  font-size: 48px;
+  color: $title-text-color;
+}
+
+.header_list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.header_button {
+  border-radius: 20px;
+  border: 1px solid transparent;
+  width: 62.4px;
+  height: 24px;
+  background-color: $title-text-color;
+
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $primary-text-color;
+  margin-top: 222px;
+  z-index: 999;
+}
+
+.header-btn {
+  width: 82.8px;
+  color: $title-text-color;
+  background-color: $primary-text-color;
+  margin-left: 8px;
+}
+
+.header_logo {
+  margin-bottom: 36px;
+}
+
+.navigation {
+  padding-top: 6px;
+}
+
+.menu__btn {
+  display: block;
+  width: 25px;
+  height: 20px;
+  border: none;
+  outline: none;
+  border-top: 1.5px solid $title-text-color;
+  border-bottom: 1.5px solid $title-text-color;
+  background-color: transparent;
+  position: relative;
+  padding: 0;
+}
+
+.menu__btn::before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 1px;
+  background-color: $title-text-color;
+  right: 0;
+  padding: 0;
+}
+
+.header_group {
+  display: flex;
+}
+
+.menu {
+  margin-top: 15px;
+  margin-left: 61px;
+}
+
+.header_menu {
+  display: flex;
+}
+
+.header_circle {
+  background-color: $hero-accent-bg-color;
+  width: 346px;
+  height: 344px;
+  position: absolute;
+  border-radius: 200px;
+  margin-right: 36px;
+  margin-bottom: 75px;
+  -webkit-animation: pulsing 2s infinite;
+  animation: pulsing 2s infinite;
+}
+
+// @-webkit-keyframes pulsing {
+//   0% {
+//     -webkit-transform: scale(0.5, 0.5);
+//     transform: scale(0.5, 0.5)
+//   }
+//   50% {
+//     -webkit-transform: scale(1.0, 1.0);
+//     transform: scale(1.0, 1.0);
+//   }
+//   100% {
+//     -webkit-transform: scale(0.5, 0.5);
+//     transform: scale(0.5, 0.5);
+//   }
+// }
+
+// @keyframes pulsing {
+//   0% {
+//     -webkit-transform: scale(0.5, 0.5);
+//     transform: scale(0.5, 0.5)
+//   }
+//   50% {
+//     -webkit-transform: scale(1.0, 1.0);
+//     transform: scale(1.0, 1.0);
+//   }
+//   100% {
+//     -webkit-transform: scale(0.5, 0.5);
+//     transform: scale(0.5, 0.5);
+//   }
+// }
