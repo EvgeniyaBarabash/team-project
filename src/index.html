@@ -11,7 +11,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
     />
   </head>
   <body>
@@ -21,15 +21,15 @@
 
     <include src="./partials/cow.html"></include>
 
-  <include src="./partials/gallery.html"></include>
+    <include src="./partials/gallery.html"></include>
     <include src="./partials/contacts.html"></include>
     <include src="./partials/footer.html"></include>
 
-  
-
-   
-
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
     <script src="./js/product-ice-cream.js"></script>
     <script src="js/product-coffee.js"></script>
     <script src="js/product-milkshakes.js"></script>
