@@ -98,15 +98,15 @@ $copyright-border);
 }
 
 
-.slider-two{
-    margin-top: 52px;
-}
-
-.slick-dots{
+.reviews__slider .slick-dots{
     bottom: -40px;
 
     @media screen and (min-width: 768px){
-    bottom: 66px;
+    bottom: -130px;
+    }
+
+    @media screen and (min-width: 1200px){
+        bottom: -135px;
     }
 }
 
@@ -115,7 +115,7 @@ $copyright-border);
     margin-left: -10px; 
 }
 
-.slick-dots li button:nth-child(4) {
+.slick-dots li button {
     width:12px;
     height:12px;
     }
@@ -147,6 +147,55 @@ $copyright-border);
     color: $red-button;
 }
 
+.reviews__slider-two{
+        margin-top: 52px;
+
+    @media screen and (min-width: 768px){
+            bottom: -80px;
+    }
+    
+    @media screen and (min-width: 1200px){
+        bottom: -90px;
+    } 
+}
+
+.reviews__slider-two .slick-dots{
+    bottom: -30px;
+    
+    @media screen and (min-width: 768px){
+        bottom: -15px;
+    } 
+    
+    @media screen and (min-width: 1200px){
+        bottom: -30px;
+    } 
+}
+
+.reviews__slider-two .slick-dots li{
+    margin-right: 18px;
+}
+
+
+.reviews__slider-two .slick-dots li button:before{
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: #D9D9D9;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.reviews__slider-two .slick-dots li.slick-active button:before{
+    content: url("../images/house.svg");
+    top: 50%;
+    left: 50%;
+    transition:  translate(-50% -50%) ;
+    margin-right: 10px;
+    background-color: $primary-text-color ;
+}
 
 .reviews__name{
 font-weight: 500;
