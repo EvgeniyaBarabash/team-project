@@ -1,10 +1,13 @@
+.gallery{
+    background-image: linear-gradient(to bottom, $first-bg-color 40%, $primary-text-color 40%);
+}
+
 .gallery__list{
     position: relative;
-    bottom: 48px;
+    @extend %list;
     width: 320px;
     height: 122px;
     margin: auto;
-
 
     @media screen and (min-width: 768px) {
         bottom: 86px;
@@ -17,11 +20,6 @@
         bottom: 171px;
         height: 430px;
     }
-}
-
-.gallery__list{
-   @extend %list;
-   position: relative;
 }
 
 .gallery__pic-one{
