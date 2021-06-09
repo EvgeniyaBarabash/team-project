@@ -6,10 +6,10 @@
 
 .how-made {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
   padding-top: 125px;
-  padding-bottom: 97px;
+  padding-bottom: 145px;
   background-color: $first-bg-color;
   max-width: 320px;
 
@@ -20,13 +20,13 @@
   @media screen and (min-width: 480px) and (max-width: 767px) {
     max-width: 767px;
     padding-top: 130px;
-    padding-bottom: 140px;
+    padding-bottom: 246px;
   }
 
   @media screen and (min-width: 768px) {
     max-width: 1280px;
     padding-top: 125px;
-    padding-bottom: 139px;
+    padding-bottom: 310px;
   }
 }
 
@@ -51,8 +51,6 @@
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     min-width: 100%;
   }
-  // @media screen and (min-width: 1280px) {
-  // }
 }
 
 .text__black {
@@ -217,11 +215,35 @@
   margin-top: 16px;
 }
 
+.backet::before {
+  display: inline-block;
+  content: '';
+  background-image: url(../images/cow/backet.png);
+  width: 33px;
+  height: 50px;
+}
+
+.apples::before {
+  display: inline-block;
+  content: '';
+  background-image: url(../images/cow/apples.png);
+  width: 50px;
+  height: 50px;
+}
+
+.heart::before {
+  display: inline-block;
+  content: '';
+  background-image: url(../images/cow/heart.png);
+  width: 44px;
+  height: 50px;
+}
+
 .splash {
   background-image: url(../images/cow/mobile-splash@1x.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 0 670px;
+  background-position: 0 790px;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     background-image: none;
@@ -229,18 +251,18 @@
 
   @media screen and (min-width: 1280px) {
     background-image: url(../images/cow/desktop-splash@1x.png);
-    background-position: 0 342px;
+    background-position: 0 542px;
   }
 }
 @media (min-resolution: 2dppx) {
   .splash {
     background-image: url(../images/cow/mobile-splash@2x.png);
-    background-position: 0 670px;
+    background-position: 0 790px;
   }
 }
 @media screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .splash {
     background-image: url(../images/cow/desktop-splash@2x.png);
-    background-position: 0 342px;
+    background-position: 0 542px;
   }
 }
