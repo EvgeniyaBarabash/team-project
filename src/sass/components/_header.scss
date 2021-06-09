@@ -12,17 +12,13 @@
   }
 }
 
-.header-desktop {
-  display: flex;
-}
+// .header-group {
+//   display: flex;
 
-.header-group {
-  display: flex;
-
-  @media screen and (min-width: 1200px) {
-    margin-left: 65px;
-  }
-}
+//   @media screen and (min-width: 1200px) {
+//     margin-left: 65px;
+//   }
+// }
 
 .menu {
   margin-top: 15px;
@@ -32,19 +28,11 @@
 .header_menu {
   display: flex;
 }
-
-.header_title {
-  font-family: $title-font;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 1.15;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: $primary-text-color;
+.header-name {
   position: absolute;
   top: 105px;
   right: 60px;
+  z-index: 5;
 
   @media screen and (min-width: 768px) {
     top: 102px;
@@ -56,6 +44,16 @@
     right: 630px;
     top: 104px;
   }
+}
+.header_title {
+  font-family: $title-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $primary-text-color;
 }
 
 .header_title-span {
@@ -112,7 +110,8 @@
   }
 }
 
-.header_list-contacts {
+.header_link {
+  @extend%link;
   font-family: $main-font;
   font-weight: 700;
   font-size: 16px;
@@ -172,7 +171,11 @@
     display: none;
   }
 }
-
+.header-name_btn {
+  @extend%list;
+  display: flex;
+  margin-top: 20px;
+}
 .header_button {
   border-radius: 20px;
   border: 1px solid transparent;
@@ -189,7 +192,6 @@
   justify-content: center;
   text-align: center;
   color: $primary-text-color;
-  margin-top: 0;
   z-index: 3;
 
   @media screen and (min-width: 1200px) {
@@ -267,6 +269,8 @@
 }
 
 .header_circle {
+  width: 346px;
+  height: 344px;
   position: absolute;
   top: 31px;
   left: 100px;
