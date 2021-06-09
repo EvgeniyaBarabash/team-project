@@ -1,6 +1,24 @@
 .header {
   background-color: $hero-bg-color;
   max-height: 502px;
+  position: relative;
+
+  @media screen and (max-width: 1200px) {
+    max-height: 665px;
+  }
+}
+
+.header-desktop {
+  display: flex;
+}
+
+.menu {
+  margin-top: 15px;
+  margin-left: 61px;
+}
+
+.header_menu {
+  display: flex;
 }
 
 .header_title {
@@ -13,7 +31,15 @@
   text-transform: uppercase;
   color: $primary-text-color;
   position: absolute;
-  top: 101px;
+  top: 87px;
+
+
+  @media screen and (max-width: 1200px) {
+    font-size: 38px;
+    line-height: 1.15;
+    top:54px;
+  
+  }
 }
 
 .header_background-image {
@@ -21,11 +47,23 @@
   flex-direction: column;
   position: relative;
   height: 410px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 20px;
+    height: 557px;
+  }
 }
 
 .ice-cream {
   position: absolute;
   margin-left: 100px;
+  bottom:0;
+
+  @media screen and (min-width: 1200px) {
+  right:183px;
+    
+    
+  }
 }
 
 .header_title-span {
@@ -38,6 +76,67 @@
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
+
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    position:absolute;
+    left:333px;
+    display: flex;
+    margin-top: 50px;
+    z-index:3;
+  }
+}
+
+.header_list-contacts {
+    font-family: $main-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: $primary-text-color;
+}
+
+@media screen and (min-width: 1200px) {
+  .header__list-margin:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+
+.current {
+  color: $title-text-color;
+}
+
+.header_button-first {
+  width: 159px;
+  height: 44px;
+  border-radius: 22px;
+  border: 1px solid transparent;
+  background-color: $primary-text-color;
+
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $title-text-color;
+  padding-right:37px;
+  padding-left:37px;
+
+position:absolute;
+  top: 38px;
+  right: 115px;
+
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
 }
 
 .header_button {
@@ -51,13 +150,23 @@
   font-style: normal;
   font-weight: normal;
   font-size: 8px;
-  line-height: 10px;
+  line-height: 1.25;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: $primary-text-color;
   margin-top: 222px;
   z-index: 3;
+
+
+  @media screen and (min-width: 1200px) {
+    width: 104px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 1.28;
+    top: 238px;
+  }
+
 }
 
 .header-btn {
@@ -65,10 +174,21 @@
   color: $title-text-color;
   background-color: $primary-text-color;
   margin-left: 8px;
+
+  @media screen and (min-width: 1200px) {
+    width: 138px;
+    height: 40px;
+  }
 }
 
 .header_logo {
   margin-bottom: 36px;
+
+  @media screen and (min-width: 1200px) {
+    position:absolute;
+    top: 37px;
+    left: 46px;
+  }
 }
 
 .navigation {
@@ -86,6 +206,10 @@
   background-color: transparent;
   position: relative;
   padding: 0;
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
 }
 
 .menu__btn::before {
@@ -98,31 +222,62 @@
   padding: 0;
 }
 
-.header_group {
+.header-group {
   display: flex;
-}
 
-.menu {
-  margin-top: 15px;
-  margin-left: 61px;
-}
-
-.header_menu {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    margin-left: 65px;
+  }
 }
 
 .header_circle {
-  background-color: $hero-accent-bg-color;
-  width: 346px;
-  height: 344px;
   position: absolute;
-  border-radius: 200px;
-  margin-right: 36px;
   margin-bottom: 75px;
   -webkit-animation: pulsing 2s infinite;
   animation: pulsing 2s infinite;
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    left: 475px;
+    top: 52px;
+  }
 }
 
+@media screen and (max-width: 320px) {
+  .header-foto {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header-foto {
+    position: absolute;
+    left: 77px;
+    bottom: 45px;
+  }
+}
+
+.header_text{
+display:inline-block;
+position:absolute;
+bottom:102px;
+left:295px;
+  font-family: $main-font;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.42;
+color:$primary-text-color;
+
+@media screen and (max-width: 767.98px) {
+    display: none;
+  }
+}
+
+// @media screen and (max-width: 1200px) {
+//   .header-foto {
+//   }
+// }
 // @-webkit-keyframes pulsing {
 //   0% {
 //     -webkit-transform: scale(0.5, 0.5);
