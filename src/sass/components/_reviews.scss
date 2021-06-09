@@ -5,7 +5,7 @@
 
     @media screen and (min-width: 768px){
     padding-top: 121px;
-    padding-bottom: 197px;
+    padding-bottom: 234px;
     }
 
     @media screen and (min-width: 1200px){
@@ -36,48 +36,46 @@
 
 .reviews__box{
 position: relative;
-width: 280px;
-background-color: $grey-bg-color;
-z-index: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 308px;
+background-color: $grey-bg-color; 
 
 @media screen and (min-width: 768px) {
-    width: 620px;
     height: 164px;
     }
 
 @media screen and (min-width: 1200px){
-    width: 926px; 
     height: 138px;    
     }
 }
 
 .reviews__text{
-display: block;
 position: relative;
-padding: 43px 50px;
+width: 180px;
 font-weight: 500;
 font-size: 12px;
 line-height: 2.58;
 text-align: center;
 color: $black-text-color;
-background-image: repeating-linear-gradients(to bottom,
-$copyright-border);
-
+background-image: repeating-linear-gradient(to bottom, $grey-bg-color 0 30px, $copyright-border 31px);
 
 @media screen and (min-width: 768px) {
-    display: flex;
-    padding: 40px 30px;
+    width: 544px;
     font-size: 14px;
     line-height: 2.14;
     letter-spacing: 0.04em;
+    background-image: repeating-linear-gradient(to bottom, $grey-bg-color 0 29px, $copyright-border 30px);
     }
 
 
     @media screen and (min-width: 1200px){
-    padding: 0;
+    width: 822px;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.04em;
+    background-image: repeating-linear-gradient(to bottom, $grey-bg-color 0 30px, $copyright-border 31px);
     }
 }
 
@@ -85,7 +83,6 @@ $copyright-border);
     position: absolute;
     top: 28px;
     left: 61px;
-    z-index: 0;
     @media screen and (min-width: 768px){
         top: 30px;
         left: 40px;
@@ -97,31 +94,22 @@ $copyright-border);
     }
 }
 
-
 .reviews__slider .slick-dots{
-    bottom: -40px;
+    margin-bottom: -40px;
+    bottom: 0;
 
     @media screen and (min-width: 768px){
-    bottom: -130px;
+    bottom: -110px;
     }
 
     @media screen and (min-width: 1200px){
-        bottom: -135px;
+        bottom: -95px;
     }
 }
 
 .slick-dots li {
     padding: 0;
     margin-left: -10px; 
-}
-
-.slick-dots li button {
-    width:12px;
-    height:12px;
-    }
-  
-.slick-dotted.slick-slider{
-    margin-bottom: 0;
 }
 
 .slick-dots li button:before{
@@ -149,9 +137,10 @@ $copyright-border);
 
 .reviews__slider-two{
         margin-top: 52px;
+        bottom: 0;
 
     @media screen and (min-width: 768px){
-            bottom: -80px;
+        bottom: -100px;
     }
     
     @media screen and (min-width: 1200px){
@@ -163,7 +152,7 @@ $copyright-border);
     bottom: -30px;
     
     @media screen and (min-width: 768px){
-        bottom: -15px;
+        bottom: -35px;
     } 
     
     @media screen and (min-width: 1200px){
@@ -180,21 +169,20 @@ $copyright-border);
     content: '';
     width: 12px;
     height: 12px;
-    background-color: #D9D9D9;
     top: 50%;
     left: 50%;
     border-radius: 50%;
     margin-right: 10px;
+    background-color: #D9D9D9;
 }
 
 
 .reviews__slider-two .slick-dots li.slick-active button:before{
-    content: url("../images/house.svg");
-    top: 50%;
-    left: 50%;
-    transition:  translate(-50% -50%) ;
+    content: '';
     margin-right: 10px;
-    background-color: $primary-text-color ;
+    border-radius: 0%;
+    background-color: $primary-text-color;
+    background-image: url("../images/house.svg");
 }
 
 .reviews__name{
