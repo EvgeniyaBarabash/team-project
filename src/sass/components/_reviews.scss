@@ -1,16 +1,16 @@
 .reviews{
     width: 100%;
     padding-top: 80px;
-    padding-bottom: 170px;
+    padding-bottom: 289px;
 
     @media screen and (min-width: 768px){
     padding-top: 121px;
-    padding-bottom: 234px;
+    padding-bottom: 311px;
     }
 
     @media screen and (min-width: 1200px){
     padding-top: 123px;
-    padding-bottom: 275px;
+    padding-bottom: 346px;
     }
 }
 
@@ -43,30 +43,69 @@ height: 308px;
 background-color: $grey-bg-color; 
 
 @media screen and (min-width: 768px) {
+    width: 620px;
     height: 164px;
     }
 
 @media screen and (min-width: 1200px){
+    width: 926px;
     height: 138px;    
     }
 }
 
+.reviews__box:before{
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 217px;
+    background-image: repeating-linear-gradient(to bottom,$grey-bg-color 0 30px, $copyright-border 31px, $grey-bg-color 32px);
+    z-index: 0;
+   
+   
+    @media screen and (min-width: 768px){
+        width: 544px;
+        height: 106px;
+        background-image: repeating-linear-gradient(to bottom,$grey-bg-color 0 29px,  $copyright-border 30px, $grey-bg-color 31px);
+    } 
+
+    @media screen and (min-width: 1200px){
+        width: 822px;
+        height: 74px;
+        background-image: repeating-linear-gradient(to bottom, $grey-bg-color 0 31px, $copyright-border 32px, $grey-bg-color 33px);
+    }
+}
+
+.slider__icon{
+    position: absolute;
+    top: 28px;
+    left: 40px;
+   
+    @media screen and (min-width: 768px){
+        top: 20px;
+        left: 20px;
+    }
+
+    @media screen and (min-width: 1200px){
+        top: 25px;
+        left: 32px;
+    }
+}
+
 .reviews__text{
-position: relative;
+position: absolute;
 width: 180px;
 font-weight: 500;
 font-size: 12px;
 line-height: 2.58;
 text-align: center;
 color: $black-text-color;
-background-image: repeating-linear-gradient(to bottom, $grey-bg-color 0 30px, $copyright-border 31px);
+z-index: 2;
 
 @media screen and (min-width: 768px) {
     width: 544px;
     font-size: 14px;
     line-height: 2.14;
     letter-spacing: 0.04em;
-    background-image: repeating-linear-gradient(to bottom, $grey-bg-color 0 29px, $copyright-border 30px);
     }
 
 
@@ -75,22 +114,6 @@ background-image: repeating-linear-gradient(to bottom, $grey-bg-color 0 30px, $c
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.04em;
-    background-image: repeating-linear-gradient(to bottom, $grey-bg-color 0 30px, $copyright-border 31px);
-    }
-}
-
-.slider__icon{
-    position: absolute;
-    top: 28px;
-    left: 61px;
-    @media screen and (min-width: 768px){
-        top: 30px;
-        left: 40px;
-    }
-
-    @media screen and (min-width: 1200px){
-        top: 32px;
-        left: 50px;
     }
 }
 
@@ -191,4 +214,14 @@ font-size: 14px;
 line-height: 1.85;
 text-align: center;
 color: $black-text-color;
+
+    @media screen and (min-width: 768px){
+    font-size: 16px;
+    line-height: 30px;
+    }
+
+    @media screen and (min-width: 1200px){
+    font-size: 20px;
+    line-height: 37px;
+    } 
 }
