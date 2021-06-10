@@ -1,30 +1,24 @@
-// *,
-// *:before,
-// *:after {
-//   outline: 2px solid red;
-// }
+*,
+*:before,
+*:after {
+  outline: 2px solid red;
+}
 
 .how-made {
   display: flex;
-  // margin-left: auto;
-  // margin-right: auto;
   padding-top: 125px;
   padding-bottom: 145px;
   background-color: $first-bg-color;
-  // max-width: 320px;
 
   @media screen and (max-width: 479px) {
-    // max-width: 479px;
   }
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
-    // max-width: 767px;
     padding-top: 130px;
     padding-bottom: 246px;
   }
 
   @media screen and (min-width: 768px) {
-    // max-width: 1280px;
     padding-top: 125px;
     padding-bottom: 310px;
   }
@@ -43,13 +37,19 @@
   }
 }
 
-.feature__text {
+.features__text {
   @media screen and (max-width: 479px) {
     width: 320px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     min-width: 100%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    // padding-top: 46px;
+
+    margin-top: 66px;
   }
 }
 
@@ -59,7 +59,7 @@
   font-size: 12px;
   line-height: 1.62;
 
-  padding-top: 46px;
+  // padding-top: 46px;
   padding-bottom: 46px;
 
   color: $black-text-color;
@@ -169,6 +169,17 @@
   }
 }
 
+.features__title {
+  @extend%title;
+  margin-bottom: 26px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 59px;
+  }
+}
+
 .feature__list {
   @extend %list;
   max-width: 230px;
@@ -244,8 +255,7 @@
   background-repeat: no-repeat;
   background-size: contain;
 
-  background-position: 0 740px;
-
+  background-position: 0 496px;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     background-image: none;
@@ -253,19 +263,19 @@
 
   @media screen and (min-width: 1280px) {
     background-image: url(../images/cow/desktop-splash@1x.png);
-    background-position: 0 542px;
+    background-position: 0 142px;
   }
 }
 @media (min-resolution: 2dppx) {
   .splash {
     background-image: url(../images/cow/mobile-splash@2x.png);
-    background-position: 0 790px;
+    background-position: 0 496px;
   }
 }
 @media screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .splash {
     background-image: url(../images/cow/desktop-splash@2x.png);
-    background-position: 0 542px;
+    background-position: 0 142px;
   }
 }
 
