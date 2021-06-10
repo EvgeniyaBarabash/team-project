@@ -1,20 +1,19 @@
 .header {
   background-color: $hero-bg-color;
-  max-height: 502px;
+  // max-height: 502px;
   position: relative;
-
-  @media screen and (min-width: 768px) {
-    max-height: 399px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    max-height: 665px;
-  }
+  max-width: 100%;
+  overflow: hidden;
 }
 
-.header-desktop {
-  display: flex;
-}
+//   @media screen and (min-width: 768px) {
+//     max-height: 399px;
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     max-height: 665px;
+//   }
+// }
 
 .header-group {
   display: flex;
@@ -25,42 +24,66 @@
 }
 
 .menu {
+  margin-left: 50px;
   margin-top: 15px;
-  margin-left: 61px;
 }
 
 .header_menu {
   display: flex;
-}
-
-.header_title {
-  font-family: $title-font;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 1.15;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: $primary-text-color;
-  position: absolute;
-  top: 105px;
-  right: 60px;
+  padding-top: 6px;
 
   @media screen and (min-width: 768px) {
-    top: 102px;
-    right: 34px;
+    padding-top: 0;
+  }
+}
+
+.header-name {
+  position: absolute;
+  top: 95px;
+  right: 60px;
+  z-index: 5;
+
+  @media screen and (min-width: 768px) {
+    right: 540px;
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 38px;
-    right: 630px;
+    right: 733px;
     top: 104px;
+  }
+}
+.header_title {
+  font-family: $title-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $primary-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.13;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.15;
   }
 }
 
 .header_title-span {
   font-size: 48px;
   color: $title-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 48px;
+  }
 }
 
 .header_background-image {
@@ -68,28 +91,32 @@
   flex-direction: column;
   position: relative;
   height: 410px;
+  position: relative;
 
   @media screen and (min-width: 1200px) {
-    margin-top: 20px;
     height: 557px;
   }
 }
 
 .ice-cream {
   position: absolute;
-  left: 117px;
+  left: 87px;
   top: 0;
   width: 171px;
+  height: 410px;
 
   @media screen and (min-width: 768px) {
-    left: 330px;
-    top: 42px;
+    left: 300px;
+    top: 72px;
     width: 143px;
+    height: 336px;
   }
 
   @media screen and (min-width: 1200px) {
-    left: 430px;
-    width: 216px;
+    left: 550px;
+    top: 153px;
+    width: 236px;
+    height: 557px;
   }
 }
 
@@ -107,12 +134,13 @@
     position: absolute;
     left: 333px;
     display: flex;
-    margin-top: 50px;
+    top: 50px;
     z-index: 3;
   }
 }
 
-.header_list-contacts {
+.header_link {
+  @extend%link;
   font-family: $main-font;
   font-weight: 700;
   font-size: 16px;
@@ -152,12 +180,16 @@
   position: absolute;
   top: 45px;
   right: 34px;
+  &:hover,
+  &:focus {
+    background-color: $white-button-hover;
+  }
 
   @media screen and (max-width: 767.98px) {
     display: none;
   }
   @media screen and (min-width: 1200px) {
-    top: 45px;
+    top: 40px;
     right: 100px;
   }
 }
@@ -172,7 +204,11 @@
     display: none;
   }
 }
-
+.header-name_btn {
+  @extend%list;
+  display: flex;
+  margin-top: 10px;
+}
 .header_button {
   border-radius: 20px;
   border: 1px solid transparent;
@@ -189,9 +225,11 @@
   justify-content: center;
   text-align: center;
   color: $primary-text-color;
-  margin-top: 0;
   z-index: 3;
-
+  &:hover,
+  &:focus {
+    background-color: $red-button-hover;
+  }
   @media screen and (min-width: 1200px) {
     width: 104px;
     height: 40px;
@@ -205,7 +243,10 @@
   color: $title-text-color;
   background-color: $primary-text-color;
   margin-left: 8px;
-
+  &:hover,
+  &:focus {
+    background-color: $white-button-hover;
+  }
   @media screen and (min-width: 1200px) {
     width: 138px;
     height: 40px;
@@ -248,7 +289,7 @@
   @media screen and (min-width: 768px) {
     position: absolute;
     top: 57px;
-    right: 235px;
+    right: 226px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -268,23 +309,36 @@
 
 .header_circle {
   position: absolute;
-  top: 31px;
-  left: 100px;
-  top: 180px;
+  left: 0;
+  top: 0;
+  background-color: $hero-accent-bg-color;
+  border: 1px solid $hero-accent-bg-color;
+  height: 346px;
+  width: 346px;
+  border-radius: 400%;
   -webkit-animation: pulsing 2s infinite;
   animation: pulsing 2s infinite;
 
   @media screen and (min-width: 768px) {
-    top: 31px;
-    left: 296px;
-    width: 324px;
+    background-color: $hero-accent-bg-color;
+    border: 1px solid $hero-accent-bg-color;
+    height: 324px;
+    width: 322px;
+    border-radius: 400%;
+    position: absolute;
+    left: 268px;
+    top: 20px;
   }
 
   @media screen and (min-width: 1200px) {
+    background-color: $hero-accent-bg-color;
+    border: 1px solid $hero-accent-bg-color;
+    height: 450px;
+    width: 450px;
+    border-radius: 400%;
     position: absolute;
-    left: 465px;
-    top: 52px;
-    width: 538px;
+    left: 400px;
+    top: 40px;
   }
 }
 
@@ -296,11 +350,11 @@
 
 .header-foto {
   position: absolute;
-  left: 34px;
+  left: 0;
   bottom: 28px;
 
   @media screen and (min-width: 1200px) {
-    left: 44px;
+    left: 0;
     bottom: 45px;
   }
 }
@@ -309,7 +363,7 @@
   display: inline-block;
   position: absolute;
   bottom: 85px;
-  left: 80px;
+  left: 130px;
   font-family: $main-font;
   font-style: normal;
   font-weight: 400;
@@ -322,8 +376,8 @@
   }
 
   @media screen and (min-width: 1200px) {
-    bottom: 59px;
-    left: 154px;
+    bottom: 105px;
+    left: 194px;
     font-size: 14px;
     line-height: 1.42;
   }
@@ -331,18 +385,16 @@
 
 .header_girl {
   position: absolute;
-  width: 168px;
   right: 0;
-  top: 245px;
+  top: 276px;
 
   @media screen and (max-width: 767.98px) {
     display: none;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 293px;
     right: 0;
-    top: 325px;
+    top: 423px;
   }
 }
 
@@ -372,7 +424,7 @@
   background-color: $primary-text-color;
   border: transparent;
   display: inline-block;
-  left: 84px;
+  left: 130px;
   position: absolute;
   bottom: 60px;
 
@@ -385,14 +437,14 @@
   .button-arrow {
     width: 30px;
     height: 30px;
-    left: 295px;
+    left: 190px;
     bottom: 60px;
   }
 }
 
 .icon-elipse {
   position: absolute;
-  right: 34px;
+  right: 0;
   top: 94px;
 
   width: 16px;
@@ -403,16 +455,16 @@
 
   @media screen and (min-width: 1200px) {
     width: 30px;
-    right: 100px;
-    top: 155px;
+    right: 0;
+    top: 135px;
   }
 }
 
 .icon-elipse-two {
-  top: 115px;
+  top: 95px;
 
   @media screen and (min-width: 1200px) {
-    top: 186px;
+    top: 180px;
   }
 }
 
@@ -430,7 +482,7 @@
 
   position: absolute;
   top: 105px;
-  right: 44px;
+  right: 6px;
   z-index: 3;
 
   @media screen and (max-width: 767.98px) {
@@ -440,16 +492,16 @@
   @media screen and (min-width: 1200px) {
     font-size: 46px;
     line-height: 1.15;
-    top: 160px;
-    right: 115px;
+    top: 140px;
+    right: 11px;
   }
 }
 
 .number-two {
-  top: 182px;
+  top: 164px;
 
   @media screen and (min-width: 1200px) {
-    top: 251px;
+    top: 245px;
   }
 }
 
@@ -464,7 +516,7 @@
 
   position: absolute;
   top: 135px;
-  right: 44px;
+  right: 6px;
 
   @media screen and (max-width: 767.98px) {
     display: none;
@@ -473,16 +525,16 @@
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.28;
-    top: 215px;
-    right: 115px;
+    top: 195px;
+    right: 11px;
   }
 }
 
 .text-second {
-  top: 217px;
+  top: 195px;
 
   @media screen and (min-width: 1200px) {
-    top: 306px;
+    top: 301px;
   }
 }
 
