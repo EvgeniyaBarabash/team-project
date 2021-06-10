@@ -1,5 +1,6 @@
 <section class="contacts">
     <div class="container">
+        <h2 class="visually-hidden">contacts</h2>
         <ul class="contact__list">
             <li class="contact__item wow slideInLeft" data-wow-offset="100" data-wow-duration="2s">
                 <p class="contact__cafe">cafe</p>
@@ -69,12 +70,22 @@
             </li>
         </ul>
         <div class="contact__buttons">
-            <button type="button" class="contact__button-first">Our Locations <svg width="10px" height="10px">
+            <button type="button" class="contact__button-first modal__contacts-open">Our Locations <svg width="10px" height="10px">
                     <use href="./images/symbol-defs.svg#short-arrow-white"></use>
                 </svg></button>
-            <button type="button" class="contact__button-second">Franchise <svg width="10px" height="10px">
+            <button type="button" class="contact__button-second modal__contacts-open">Franchise <svg width="10px" height="10px">
                     <use href="./images/symbol-defs.svg#short-arrow-red"></use>
                 </svg></button>
         </div>
     </div>
 </section>
+<!-- modal window -->
+
+    <div class="modal__contacts" id="modal1">
+        
+        <iframe class="map dialog"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8998.193179171803!2d73.23870258568628!3d-0.5781564503101206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x24b59dea661ad3e5%3A0xf85b0893ec8d8c9a!2sDhonveligando%20Fanno%20Beach!5e1!3m2!1sru!2scz!4v1623268282832!5m2!1sru!2scz"
+         style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        
+    </div>
+  
