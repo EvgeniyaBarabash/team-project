@@ -1,6 +1,15 @@
-<section class="how-made splash" id="how">
-  <div class="container">
-    <p class="products__title-label">tradition and love</p>
+
+<section class="how-made" id="how">
+  <div class="container splash">
+    <p
+      class="products__title-label wow tada"
+      data-wow-offset="200"
+      data-wow-duration="2s"
+      data-wow-delay="0.3s"
+    >
+      tradition and love
+    </p>
+
     <h2 class="products__title">how it’s made?</h2>
     <div class="features">
       <div class="pic">
@@ -36,10 +45,14 @@
           Aliquam erat volutpat. Aenean accumsan.
         </p>
         <div class="button">
-          <button class="read__more" type="button" data-modal__open>Read more</button>
-          <svg class="arrow" width="5" height="8">
-            <use href="./images/cow/sprite.svg#bracket"></use>
-          </svg>
+
+          <button class="read__more" type="button" data-modal-open-cow>
+            Read more
+            <svg class="arrow" width="5" height="8">
+              <use href="./images/cow/sprite.svg#bracket"></use>
+            </svg>
+          </button>
+
         </div>
       </div>
     </div>
@@ -60,3 +73,20 @@
     </ul>
   </div>
 </section>
+<!-- Модальное окно -->
+<div class="backdrop is-hidden" data-modal-cow>
+  <div class="modal">
+    <div class="wrapper-modal modal--cow">
+      <button type="button" class="modal__btn" data-modal-close-cow>
+        <svg class="modal__icon">
+          <use href="./images/symbol-defs.svg#close-black"></use>
+        </svg>
+      </button>
+      <h3 class="products__title-label products__title-label--white">how it's made?</h3>
+      <p class="products__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et. dolore magna aliqua facilisis.
+      </p>
+    </div>
+  </div>
+</div>
