@@ -1,5 +1,15 @@
 .gallery{
-    background-image: linear-gradient(to bottom, $first-bg-color 40%, $primary-text-color 40%);
+    background-image: linear-gradient(to bottom, $first-bg-color 35%, $primary-text-color 35%);
+    padding-bottom: 80px;
+   
+    @media screen and (min-width: 768px) {
+    padding-bottom: 121px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    padding-bottom: 123px;   
+    }
+
 }
 
 .gallery__list{
@@ -10,159 +20,243 @@
     margin: auto;
 
     @media screen and (min-width: 768px) {
-        bottom: 86px;
         width: 768px;
         height: 264px; 
     }
 
     @media screen and (min-width: 1200px) {
         width: 1200px;
-        bottom: 171px;
         height: 430px;
     }
 }
 
-.gallery__pic-one{
+
+.gallery__link{
+    text-decoration: none;
+}
+
+.gallery__link .gallery__img {
+    transform: scale(1);
+    transition: 300ms ease-in-out;
+
+    @media screen and (min-width: 768px) {
+    transform: scale(1);
+    transition: 300ms ease-in-out;
+    }   
+    @media screen and (min-width: 1200px) {
+    transform: scale(1);
+    transition: 300ms ease-in-out;
+    }   
+}
+
+  .gallery__link:hover .gallery__img,
+  .gallery__link:focus .gallery__img {
+    transform: scale(1.1);
+    
+    @media screen and (min-width: 768px) {
+    transform: scale(1.1);
+    }   
+
+    @media screen and (min-width: 1200px) {
+    transform: scale(1.1); 
+  }
+}
+
+.gallery__item-one{
     position: absolute;
     left: 0; 
     top: 41px;
+    overflow: hidden;
+    border-radius: 15%;
 
     @media screen and (min-width: 768px) {
         left: 2%; 
-        top: 87px; 
+        top: 87px;
+        overflow: hidden;
+        border-radius: 15%; 
     }
 
     @media screen and (min-width: 1200px) {
         left: 2%; 
         top: 142px;
+        overflow: hidden;
+        border-radius: 15%;
     }
 }
 
-.gallery__pic-two{
+.gallery__item-two{
     position: absolute;
     left: 13%; 
-    top: 25px; 
+    top: 25px;
+    overflow: hidden;
+    border-radius: 15%; 
 
     @media screen and (min-width: 768px) {
         left: 14%; 
         top: 54px;
+        overflow: hidden;
+        border-radius: 15%;
     }
     
     @media screen and (min-width: 1200px) {
         left: 14%; 
-        top: 87px; 
+        top: 87px;
+        overflow: hidden;
+        border-radius: 15%; 
     }
 }
 
-.gallery__pic-three{
+.gallery__item-three{
     position: absolute;
     left: 13%; 
-    top: 66px; 
+    top: 66px;
+    overflow: hidden;
+    border-radius: 15%; 
 
     @media screen and (min-width: 768px) {
         left: 14%; 
         top: 143px;
+        overflow: hidden;
+        border-radius: 15%;
     }
 
     @media screen and (min-width: 1200px) {
         left: 14%; 
-        top: 233px; 
+        top: 233px;
+        overflow: hidden;
+        border-radius: 15%; 
     }
 }
 
-.gallery__pic-four{
+.gallery__item-four{
     position: absolute;
     left: 26%; 
-    top: 0px; 
+    top: 0px;
+    overflow: hidden;
+    border-radius: 15%; 
 
     @media screen and (min-width: 768px) {
         left: 26%; 
-        top: 0px; 
+        top: 0px;
+        overflow: hidden;
+        border-radius: 15%; 
     }
 
     @media screen and (min-width: 1200px) {
         left: 26%; 
         top: 0px;
+        overflow: hidden;
+        border-radius: 15%;
     }
 }
 
-.gallery__pic-five{
+.gallery__item-five{
     position: absolute;
     left: 26%; 
-    top: 83px; 
+    top: 83px;
+    overflow: hidden;
+    border-radius: 15%; 
 
     @media screen and (min-width: 768px) {
         left: 26%; 
         top: 179px;
+        overflow: hidden;
+        border-radius: 15%;
     }
 
     @media screen and (min-width: 1200px) {
         left: 26%; 
         top: 291px;
+        overflow: hidden;
+        border-radius: 15%;
     }
 }
 
-.gallery__pic-six{
+.gallery__item-six{
     position: absolute;
     left: 51.5%; 
-    top: 28px; 
+    top: 28px;
+    overflow: hidden;
+    border-radius: 15%; 
 
     @media screen and (min-width: 768px) {
         left: 50%; 
         top: 60px;
+        overflow: hidden;
+        border-radius: 15%;
     }
 
     @media screen and (min-width: 1200px) {
         left: 50%; 
-        top: 99px; 
+        top: 99px;
+        overflow: hidden;
+        border-radius: 15%; 
     }
 }
 
-.gallery__pic-seven{
+.gallery__item-seven{
     position: absolute;
     left: 51.5%; 
-    top: 70px; 
+    top: 70px;
+    overflow: hidden;
+    border-radius: 15%; 
 
     @media screen and (min-width: 768px) {
         left: 50%; 
         top: 150px;
+        overflow: hidden;
+        border-radius: 15%;
     }
 
     @media screen and (min-width: 1200px) {
         left: 50%; 
         top: 245px;
+        overflow: hidden;
+        border-radius: 15%;
     }
 }
 
-.gallery__pic-eight{
+.gallery__item-eight{
     position: absolute;
     left: 64.5%; 
     top: 15px;
+    overflow: hidden;
+    border-radius: 15%;
     
     @media screen and (min-width: 768px) {
         left: 62%; 
-        top: 33px; 
+        top: 33px;
+        overflow: hidden;
+        border-radius: 15%; 
     }
 
     @media screen and (min-width: 1200px) {
         left: 62%; 
         top: 53px;
+        overflow: hidden;
+        border-radius: 15%;
     }
 }
 
-.gallery__pic-nine{
+.gallery__item-nine{
     position: absolute;
     left:64.5%; 
-    top: 57px; 
+    top: 57px;
+    overflow: hidden;
+    border-radius: 15%; 
 
     @media screen and (min-width: 768px) {
         left: 62%; 
         top: 122px;
+        overflow: hidden;
+        border-radius: 15%;
     }
 
     @media screen and (min-width: 1200px) {
         left: 62%; 
         top: 199px;
+        overflow: hidden;
+        border-radius: 15%;
     }
 }
 
@@ -170,15 +264,21 @@
     position: absolute;
     left: 77.5%; 
     top: 44px;
+    overflow: hidden;
+    border-radius: 15%;
 
     @media screen and (min-width: 768px) {
         left: 74%; 
-        top: 95px; 
+        top: 95px;
+        overflow: hidden;
+        border-radius: 15%; 
     }
 
     @media screen and (min-width: 1200px) {
         left: 74%; 
-        top: 154px; 
+        top: 154px;
+        overflow: hidden;
+        border-radius: 15%; 
     }
 }
 
