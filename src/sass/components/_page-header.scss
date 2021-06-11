@@ -137,10 +137,10 @@
   background-color: $modal-bg-color;
   z-index: 35;
   @media screen and(max-width: 767px) {
-    transition: right 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: right 500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   @media screen and(min-width: 768px) and (max-width: 1199px) {
-    transition: left 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: left 500ms cubic-bezier(0.4, 0, 0.2, 1);
     position: fixed;
     width: 254px;
   }
@@ -814,6 +814,7 @@
   &:hover,
   &:focus {
     background-color: $red-button-hover;
+    color: $text-cl-white;
   }
 }
 .current {
@@ -830,6 +831,10 @@
   border: transparent;
   display: inline-block;
   text-align: center;
+  &:hover,
+  &:focus {
+    background-color: $white-button-hover;
+  }
   @media screen and (max-width: 767.98px) {
     display: none;
   }
@@ -859,6 +864,11 @@
 .header-slider__item {
   position: relative;
 }
-.menu-is-open {
-  overflow: hidden;
+// .menu-is-open {
+//   overflow: hidden;
+// }
+body.menu-open {
+  @media screen and(max-width:767px) {
+    overflow: hidden;
+  }
 }
