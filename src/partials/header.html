@@ -27,14 +27,25 @@
           <img src="./images/header/desktop/logo_desktop.png" width="199" alt="logo" />
         </picture>
       </a>
-      <div class="menu"><button class="menu__btn" data-menu-open></button></div>
+      
+        
+        <button class="mobile-menu__btn" data-menu-button aria-expanded="false" aria-controls="mobile-menu">
+          <svg
+      
+            class="mobile__icon"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use class="mobile-menu__icon--menu" href="./images/symbol-defs.svg#menu-icon"></use>
+            <use class="mobile__icon--close" href="./images/symbol-defs.svg#close-black"></use>
+        </button>
+    
       <nav class="navigation">
         <ul class="header_list">
           <li class="header_list-contacts header__list-margin">
-            <a class="header_link current" href="/">Home</a>
+            <a class="header_link current" href="./index.html">Home</a>
           </li>
           <li class="header_list-contacts header__list-margin">
-            <a class="header_link" href="/">About us</a>
+            <a class="header_link" href="./index.html">About us</a>
           </li>
           <li class="header_list-contacts header__list-margin">
             <a class="header_link" href="#how">How it’s made?</a>
