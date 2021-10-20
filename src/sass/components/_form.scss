@@ -134,6 +134,24 @@ width: 50%;
     margin-right: 8px;
     fill:$title-text-color
   }
+  .form-buy__icon-clock{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 50%;
+    left: 200px;
+    margin-right: 8px;
+    fill:$title-text-color;
+    @media screen and (min-width: 460px) and (max-width: 500px){
+      top: 50%;
+      left: 153px;
+    }
+    @media screen and (max-width: 459.99px){
+      top: 50%;
+      left: 135px;
+    }
+  }
   .form-buy__icon--select{
     display: inline-block;
     width: 25px;
