@@ -15,7 +15,8 @@ $white-button-hover: #ecebeb;
 $modal-bg-color: #e17992;
 $footer-icon-bg: #fea5bb;
 $copyright-border: #e1e1e1;
-
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$transition-duration: 250ms;
 $main-font: 'DM Sans', sans-serif;
 $title-font: 'Titan One', cursive;
 $text-cl-white: #ffffff;

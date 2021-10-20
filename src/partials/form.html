@@ -1,0 +1,69 @@
+<!-- Модальное окно -->
+<div class="js-backdrop-form is-hidden">
+    <div class="form-buy-modal"><button type="button" class="form-modal__btn">
+        <svg class="form-modal__icon">
+            <use href="./images/icon.svg#close-black2"></use>
+        </svg>
+        </type>
+      </button>
+      <form class="form-buy">
+        <h2 class="form-buy__title">Fast checkout</h2>
+        <div class="form-buy-name">
+          <label for="user-name" class="form-buy__label form-buy-text">Name</label>
+          <input name="name" type="text" id="user-name" class="form-buy__input" pattern="^[a-zA-ZА-Яа-яЁё\s]+$">
+          <svg class="form-buy__icon" width="18px" height="18px">
+            <use href="./images/icon.svg#person-black"></use>
+          </svg>
+        </div>
+        <div class="form-buy-telephon">
+          <label for="user-phone" class="form-buy__label form-buy-text">Telephon</label>
+
+          <input name="telephone" type="tel" id="user-phone" class="form-buy__input" pattern="[0-9]{5,10}"><svg class="form-buy__icon"
+            width="18px" height="18px">
+            <use href="./images/icon.svg#phone-black"></use>
+          </svg>
+        </div>
+        <div class="form-buy-mail">
+          <label for="user-email" class="form-buy__label form-buy-text">Email</label>
+          <input name="email" type="email" id="user-email" class="form-buy__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><svg
+            class="form-buy__icon" width="18px" height="18px">
+            <use href="./images/icon.svg#email-black"></use>
+          </svg>
+        </div>
+        <div class="form-buy-select">
+        <label for="goods" class="form-buy__label form-buy-text">Choose ice-cream</label>
+        <svg
+          class="form-buy__icon--select" width="18px" height="18px">
+          <use href="./images/icon.svg#icon-ice"></use>
+        </svg>
+        <select id="goods" class="form-buy__input" name='ice'>
+          <option class="input-label__option">Coconut</option>
+          <option class="input-label__option">Strawberry</option>
+          <option class="input-label__option">Chocolate</option>
+          <option class="input-label__option">Vanilla</option>
+          <option class="input-label__option">Lemon</option>
+          <option class="input-label__option">Mango</option>
+        </select>
+      </div>
+      <div class="form-buy-time">
+        <label for="user-time" class="form-buy__label form-buy-text">Time of delivery</label>
+        <div class="form-buy-time--input">
+        <input name="day" type="data" id="user-time" class="form-buy__input form-buy__input--time form-buy__input--day" placeholder="2021-12-08"><svg
+          class="form-buy__icon" width="18px" height="18px">
+          <use href="./images/icon.svg#icon-clock"></use>
+        </svg>
+        <input name="hours" type="time" id="user-time-hour" class="form-buy__input form-buy__input--time" placeholder="08:00 AM"></div>
+      </div>
+        <div class="form-coment">
+          <label for="coments" class="form-buy-text form-buy__label">Оrder comment</label>
+          <textarea name="message" id="coments" class="form-coment__textarea" name="coments" placeholder="Еnter text"></textarea>
+        </div>
+
+        <div class="form-checkbox">
+          <input name="checkbox" type="checkbox" id="checkbox" name="topic" class="form-checkbox__input">
+          <label for="checkbox" class="form-checkbox__label">Subscribe to the newsletter</label>
+        </div>
+        <button type="submit" class="form-btn-submit">Submit</button>
+      </form>
+    </div>
+  </div>
