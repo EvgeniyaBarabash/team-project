@@ -7,7 +7,7 @@
         </type>
       </button>
       <form class="form-buy">
-        <h2 class="form-buy__title">Fast checkout</h2>
+        <h2 class="form-buy__title">order form</h2>
         <div class="form-buy-name">
           <label for="user-name" class="form-buy__label form-buy-text">Name</label>
           <input name="name" type="text" id="user-name" class="form-buy__input" pattern="^[a-zA-ZА-Яа-яЁё\s]+$">
@@ -48,11 +48,14 @@
       <div class="form-buy-time">
         <label for="user-time" class="form-buy__label form-buy-text">Time of delivery</label>
         <div class="form-buy-time--input">
-        <input name="day" type="data" id="user-time" class="form-buy__input form-buy__input--time form-buy__input--day" placeholder="2021-12-08"><svg
+        <input name="day" type="datе" id="user-time" class="form-buy__input form-buy__input--time form-buy__input--day" placeholder="2021-12-08"><svg
           class="form-buy__icon" width="18px" height="18px">
-          <use href="./images/icon.svg#icon-clock"></use>
+          <use href="./images/icon.svg#icon-calendar"></use>
         </svg>
-        <input name="hours" type="time" id="user-time-hour" class="form-buy__input form-buy__input--time" placeholder="08:00 AM"></div>
+        <input name="hours" type="time" id="user-time-hour" class="form-buy__input form-buy__input--time"><svg
+        class="form-buy__icon-clock" width="18px" height="18px">
+        <use href="./images/icon.svg#icon-clock"></use>
+      </svg></div>
       </div>
         <div class="form-coment">
           <label for="coments" class="form-buy-text form-buy__label">Оrder comment</label>
